@@ -1,6 +1,6 @@
-# claude-article-kit
+# agent-article-kit
 
-[Claude Code](https://docs.anthropic.com/en/docs/claude-code) を使った日本語の記事作成ツールキットです。採用広報・社内広報記事の作成、インタビュー、レビューを対話形式で実行できます。
+AI コーディングエージェント（Claude Code / Codex CLI）を使った日本語の記事作成ツールキットです。採用広報・社内広報記事の作成、インタビュー、レビューを対話形式で実行できます。
 
 ## 特徴
 
@@ -12,8 +12,8 @@
 ## セットアップ
 
 ```bash
-git clone https://github.com/LangCore/claude-article-kit.git
-cd claude-article-kit
+git clone https://github.com/langcore-dev/agent-article-kit.git
+cd agent-article-kit
 npm install
 ```
 

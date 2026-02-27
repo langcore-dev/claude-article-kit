@@ -1,4 +1,4 @@
-# claude-article-kit
+# agent-article-kit
 
 Claude Code / Codex CLI 対応の日本語の記事作成ツールキット。
 採用広報・社内広報記事を、対話型ワークフローで効率的に作成する。
