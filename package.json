@@ -1,0 +1,28 @@
+{
+  "name": "claude-article-kit",
+  "version": "1.0.0",
+  "description": "Claude Code を使った日本語記事作成ツールキット。採用広報・社内広報記事の作成、インタビュー、レビューを対話形式で実行できます。",
+  "scripts": {
+    "lint": "textlint \"articles/**/*.md\"",
+    "lint:fix": "textlint --fix \"articles/**/*.md\""
+  },
+  "keywords": [
+    "textlint",
+    "claude-code",
+    "japanese",
+    "article",
+    "technical-writing",
+    "recruitment",
+    "pr"
+  ],
+  "author": "LangCore",
+  "license": "MIT",
+  "devDependencies": {
+    "textlint": "^15.5.1",
+    "textlint-filter-rule-allowlist": "^4.0.0",
+    "textlint-rule-ja-no-redundant-expression": "^4.0.1",
+    "textlint-rule-ja-unnatural-alphabet": "^2.0.1",
+    "textlint-rule-no-doubled-joshi": "^5.1.1",
+    "textlint-rule-preset-ja-technical-writing": "^12.0.2"
+  }
+}

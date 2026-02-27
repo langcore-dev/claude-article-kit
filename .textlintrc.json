@@ -1,0 +1,22 @@
+{
+  "filters": {
+    "allowlist": {
+      "allow": []
+    }
+  },
+  "rules": {
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 100
+      },
+      "no-exclamation-question-mark": false
+    },
+    "no-doubled-joshi": {
+      "min_interval": 1,
+      "strict": false,
+      "allow": []
+    },
+    "ja-no-redundant-expression": true,
+    "ja-unnatural-alphabet": true
+  }
+}
