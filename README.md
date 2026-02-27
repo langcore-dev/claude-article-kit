@@ -23,6 +23,24 @@ npm install
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) がインストールされていること
 
+### Codex CLI での実行例
+
+`.agents/skills/` にスキルが配置されているため、追加設定なしで `$skill-name` で呼び出せます。
+
+```text
+$write-article
+```
+
+```text
+$interview
+```
+
+```text
+$review-article
+```
+
+`/skills` コマンドからブラウズして選択することもできます。
+
 ### 記事を書く
 
 このリポジトリのディレクトリで Claude Code を起動し、スラッシュコマンドを実行します。
@@ -100,9 +118,11 @@ textlint がインストールされている場合、記事生成後に自動�
 ## ディレクトリ構成
 
 ```
+.agents/
+└── skills/          # Codex CLI 用スキル（.claude/skills/ へのシンボリックリンク）
 .claude/
 ├── agents/          # 記事生成サブエージェント
-├── commands/        # スラッシュコマンド定義
+├── commands/        # スラッシュコマンド定義（Claude Code 用）
 └── skills/          # スキル（ワークフロー・テンプレート・ガイド）
 articles/            # 記事の出力先
 .textlintrc.json     # textlint 設定
