@@ -11,11 +11,38 @@ AI コーディングエージェント（Claude Code / Codex CLI）を使った
 
 ## セットアップ
 
+### 方法1: プラグインとしてインストール（推奨）
+
+リポジトリを clone せずに、Claude Code のプラグインとして利用できます。
+
+```bash
+claude /plugin install agent-article-kit
+```
+
+インストール後、任意のプロジェクトで以下のコマンドが使えます。
+
+```
+/agent-article-kit:write-article
+/agent-article-kit:interview
+/agent-article-kit:review-article
+```
+
+### 方法2: ローカルでテスト
+
+```bash
+git clone https://github.com/langcore-dev/agent-article-kit.git
+claude --plugin-dir ./agent-article-kit
+```
+
+### 方法3: リポジトリとして直接利用
+
 ```bash
 git clone https://github.com/langcore-dev/agent-article-kit.git
 cd agent-article-kit
 npm install
 ```
+
+この場合、コマンドは名前空間なしで利用できます（`/write-article` など）。
 
 ## 使い方
 
@@ -96,10 +123,11 @@ npm run lint:fix      # 自動修正
 ## ディレクトリ構成
 
 ```
-.claude/
-├── agents/          # 記事生成サブエージェント
-├── commands/        # スラッシュコマンド定義
-└── skills/          # スキル（ワークフロー・テンプレート・ガイド）
+.claude-plugin/      # プラグインマニフェスト
+skills/              # スキル（プラグイン用）
+agents/              # サブエージェント（プラグイン用）
+commands/            # コマンド（プラグイン用）
+.claude/             # プロジェクト直接利用用（上記と同内容）
 articles/            # 記事の出力先
 .textlintrc.json     # textlint 設定
 package.json         # 依存パッケージ

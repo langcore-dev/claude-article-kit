@@ -1,0 +1,10 @@
+{
+  "name": "agent-article-kit",
+  "description": "日本語の採用広報・社内広報記事を対話形式で作成するツールキット。テーマドリブン執筆、インタビュー、記事レビューの3つのワークフローを提供します。",
+  "version": "1.0.0",
+  "author": {
+    "name": "LangCore"
+  },
+  "repository": "https://github.com/langcore-dev/agent-article-kit",
+  "license": "MIT"
+}
